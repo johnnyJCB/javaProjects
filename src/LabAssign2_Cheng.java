@@ -66,3 +66,4 @@ public class LabAssign2_Cheng {
             return number;
         }
     }
+
