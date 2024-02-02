@@ -18,7 +18,7 @@ public class LabAssign1_Cheng {
         System.out.println("What operation would you like to conduct with the 2 numbers provided? \n1 - addition \n2 - substraction\n" +
                 "3 - multiplication \n4 - division \n5 - modulus");
         int operationSelection = scan.nextInt();    //reads the operation the user selected//
-        int result = 0;
+        int result;
 
         if (operationSelection == 1) {      // user selects addition operation//
             result = firstNumber + secondNumber;
@@ -31,7 +31,7 @@ public class LabAssign1_Cheng {
         } else if (operationSelection == 3) {       // user selects multiplication operation//
             result = firstNumber * secondNumber;
             System.out.println("Option selected: --> 3\n");
-            System.out.printf("The result of multiplying " + firstNumber + " from " + secondNumber + " is " + result);
+            System.out.printf("The result of multiplying " + firstNumber + " by " + secondNumber + " is " + result);
         } else if (operationSelection == 4) {       // user selects division operation//
             System.out.println("Option selected: --> 4\n");
             if (secondNumber == 0) {        // user tried to divide by 0//
