@@ -21,7 +21,6 @@ public class LabAssign2_Cheng {
                     % - modulus""");
 //            scan.nextLine(); ??? ask why weird output of scanner waiting for 2 inputs on 2nd time of wrong selection
             char operationSelection = scan.nextLine().charAt(0);
-
             if (!operList.contains(operationSelection)) {
                 System.out.println("Invalid Selection!");
                 continue; // restart loop if option not valid
@@ -30,7 +29,6 @@ public class LabAssign2_Cheng {
                     result = num1 + num2;
                     System.out.println("Option selected: --> +\n");
                     System.out.println("The result of adding " + num1 + " to " + num2 + " is " + result);
-
                 } else if (operationSelection == '-') {       // user selects subtraction operation//
                     result = num1 - num2;
                     System.out.println("Option selected: --> -\n");
