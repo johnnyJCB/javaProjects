@@ -60,7 +60,6 @@ public class LabAssign2A_Cheng {
     }
         public static int getOperand (Scanner scan, String wordNumber){
             System.out.println("Please enter the " + wordNumber + " whole number");
-            int number = scan.nextInt();
-            return number;
+            return scan.nextInt();
         }
     }
