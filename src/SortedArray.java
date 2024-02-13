@@ -43,14 +43,14 @@ public class SortedArray {
         for (int j = 0; j < Array.length; j++)
             System.out.printf("Element %d contents %d\n", j+1, Array[j]);
     }
-
-    public static int [] sortIntegers(int[] Array2) {
-        Arrays.sort(Array2);
-        int[] newArray = new int[Array2.length];
+    public static int[] sortIntegers(int[] Array2) {        // method takes an array of integers (Array2) as input and returns an array of integers
+        Arrays.sort(Array2);                                // Sort the input array of integers in ascending order
+        int[] newArray = new int[Array2.length];            // new array of integers "newArray" with same length as the input array "Array2"
         int j = 0;
-        for (int i = Array2.length - 1; i >= 0; i--) {
-            newArray[j] = Array2[i]; // Fill newArray in descending order
+        for (int i = Array2.length - 1; i >= 0; i--) {      // Iterate through the input array "Array2" in reverse order starting from last element
+            newArray[j] = Array2[i];                        // Assign value of current element of input array "Array2" to the index of the newArray
             j++;
-        }return newArray;
+        }
+        return newArray;
     }
 }
