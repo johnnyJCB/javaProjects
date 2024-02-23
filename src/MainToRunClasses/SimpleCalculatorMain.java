@@ -1,9 +1,13 @@
+package MainToRunClasses;
+
+import CustomClasses.SimpleCalculatorClass;
+
 public class SimpleCalculatorMain {
     public static void main(String[] args) {
 
-        SimpleCalculator calculator = new SimpleCalculator();
+        SimpleCalculatorClass calculator = new SimpleCalculatorClass();
 
-        // Set 1st & wnd numbers
+        // Set 1st & 2nd numbers
         calculator.setFirstNumber(5.0);
         calculator.setSecondNumber(4.0);
 

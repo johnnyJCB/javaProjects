@@ -1,4 +1,6 @@
-public class SimpleCalculator {
+package CustomClasses;
+
+public class SimpleCalculatorClass {
     // write code here
     private double firstNumber;
     private double secondNumber;
