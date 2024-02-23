@@ -1,4 +1,4 @@
-/* Johnny J. Cheng #1520504
+package CIT130;/* Johnny J. Cheng #1520504
 LabAssignment1 Control Structures*/
 
 import java.text.DecimalFormat;

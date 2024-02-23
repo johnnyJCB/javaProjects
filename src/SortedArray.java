@@ -1,5 +1,4 @@
 import java.util.*;
-
 /*Sorted Array
 Create a program using arrays that sorts a list of integers in descending order.
 Descending order is highest value to lowest.

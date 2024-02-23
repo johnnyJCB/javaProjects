@@ -1,4 +1,4 @@
-/* Johnny J. Cheng #1520504
+package CIT130;/* Johnny J. Cheng #1520504
 LabAssignment2 Refactoring, Looping, Characters, Methods*/
 
 import java.util.List;

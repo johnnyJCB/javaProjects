@@ -1,3 +1,5 @@
+package CIT130;
+
 import java.util.Arrays;
 import java.util.Scanner;
 /*Johnny Cheng
