@@ -65,7 +65,7 @@ public class CarClient {
     public void setYear(int year){
         int currentYear = Calendar.getInstance().get(Calendar.YEAR);
         if (year > currentYear) {
-            System.out.printf("Invalid input for year. Setting year to current year, which is %2d.\n", currentYear);
+            System.out.printf("\nDanger! Invalid input for year. Year set to current year, which is %2d.\n", currentYear);
             this.year = currentYear;
         } else {
             this.year = year;
@@ -76,7 +76,7 @@ public class CarClient {
     }
     public void setMaxMPH(double MaxMPH){       //if user inputs less than 0 for MaxMPH, it will default to 0
         if(MaxMPH < 0){
-            System.out.println("Your input is invalid for max speed, setting max speed to 0");
+            System.out.println("\nDanger! Your input for max speed was invalid, max speed set to 0.\n");
             this.maxMPH = 0;
         }else{
             this.maxMPH = MaxMPH;
@@ -87,7 +87,7 @@ public class CarClient {
     }
     public void setMPG(double MPG){         //if user inputs less than 0 as the MPG argument, MPG will default to 0
         if(MPG < 0){
-            System.out.println("Your input is invalid for miles per gallon, setting miles per gallon to 0");
+            System.out.println("Danger! Your input for miles per gallon was invalid, miles per gallon to set to 0.\n");
             this.MPG = 0;
         }else{
             this.MPG = MPG;
@@ -106,7 +106,7 @@ public class CarClient {
         return getMaxMPH() + 10;
     }
     public String toString(){
-        return String.format("Your car is a %s %s and its color is %s.\n" +
+        return String.format("Below is a summary of your car.\n" + "Your car is a %s %s and its color is %s.\n" +
                 "It was built in the year %2d and it has a max speed of %.2f miles per hour.\n" +
                 "It gives you an average of %.2f miles per gallon.", getBrand(), getModel(), getColor(), getYear(), getMaxMPH(), getMPG());
     }
