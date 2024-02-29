@@ -99,6 +99,9 @@ public class CarClient {
     public double getKPG(){
         return getMPG() * 1.609344;
     }
+    public double increaseSpeed(){
+        return maxMPH + 10;
+    }
     public String toString(){
         return String.format("My car is a %s %s and its color is %s.\n" +
                 "It was built in the year %2d and it has a max speed of %.2f miles per hour.\n" +
