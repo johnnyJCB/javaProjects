@@ -16,9 +16,7 @@ public class CarClient {
         this.model = "unknown";
     }
     public CarClient(String brand, String model){
-        this.brand = brand;
-        this.model = model;
-        this.color = "unknown";
+        this(brand, model, "unknown");
     }
     public CarClient(String brand, String model, String color){
         this.brand = brand;
@@ -32,17 +30,11 @@ public class CarClient {
         this.year = year;
     }
     public CarClient(String brand, String model, String color, int year, double maxMPH){
-        this.brand = brand;
-        this.model = model;
-        this.color = color;
-        this.year = year;
+        this(brand, model, color, year);
         setMaxMPH(maxMPH);
     }
     public CarClient(String brand, String model, String color, int year, double maxMPH, double MPG) {
-        this.brand = brand;
-        this.model = model;
-        this.color = color;
-        this.year = year;
+        this(brand, model, color, year);
         setMaxMPH(maxMPH);
         setMPG(MPG);
     }
@@ -99,8 +91,8 @@ public class CarClient {
     public double getKPG(){
         return getMPG() * 1.609344;
     }
-    public double increaseSpeed(){
-        return maxMPH + 10;
+    public double increaseSpeedBy10(){
+        return 10;
     }
     public String toString(){
         return String.format("My car is a %s %s and its color is %s.\n" +
