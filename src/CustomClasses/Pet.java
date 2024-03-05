@@ -4,10 +4,12 @@ public class Pet {
     private String name;
     private int age;
     private double weight;
+    private static int withoutName;
 
 //    Constructors
     public Pet() {
         this.name = "unknown";
+        withoutName++;
     }
 
     public Pet(String name) {
@@ -15,12 +17,13 @@ public class Pet {
     }
 
     public Pet(int age) {
-
         setAge(age);
+        withoutName++;
     }
 
     public Pet(double weight) {
         this.weight = weight;
+        withoutName++;
     }
 
     public Pet(String name, int age, double weight) {
@@ -70,5 +73,8 @@ public class Pet {
     }
     public String toString(String name) {
         return String.format("Name: %s", name);
+    }
+    public static int getWithoutName(){
+        return withoutName;
     }
 }
