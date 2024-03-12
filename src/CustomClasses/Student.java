@@ -5,7 +5,7 @@ public class Student {
     private String major;
     private int credits;
     private static int numStudent;
-//    private int
+    private int currentStudent;
 
 
     public Student(){
@@ -13,12 +13,14 @@ public class Student {
         this.major = "Blank";
         this.credits = 0;
         numStudent++;
+        currentStudent = numStudent;
     }
     public Student(String name, String major, int credits){
         this.name = name;
         this.major = major;
-        this.credits = getCredits();
+        this.credits = credits;
         numStudent++;
+        currentStudent = numStudent;
     }
     public void setName(){
         this.name = name;
@@ -44,6 +46,6 @@ public class Student {
         return credits;
     }
     public String toString(){
-        return String.format("Student %d \nStudent Name %s \nStudent Major %s \nStudent Credits %d", numStudent, this.name, this.major, this.credits);
+        return String.format("Student %d \nStudent Name %s \nStudent Major %s \nStudent Credits %d", currentStudent, this.name, this.major, this.credits);
     }
 }
