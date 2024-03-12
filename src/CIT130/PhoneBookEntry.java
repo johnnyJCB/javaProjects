@@ -49,52 +49,53 @@ public class PhoneBookEntry {
     * @param a The person's age.
     *          method checks to see if the age is valid (>0) if this is the case then
     *          // age is set to a, otherwise a is set to 1
-    * @return
     */
-   public String setAge(int a) {
+   public void setAge(int a) {
       if (a > 0) {
          age = a;
       } else {
          age = 1;
       }
+   }
 
 
-      /**
-       *  getName method
-       *  @return The person's name.
-       */
-      public String getName () {
-         return name;
-      }
+   /**
+    * getName method
+    *
+    * @return The person's name.
+    */
+   public String getName() {
+      return name;
+   }
 
 
-      /**
-       *  getPhoneNumber method
-       *  @return The person's phone number.
-       */
-      public String getPhoneNumber ()
-      {
-         return phoneNumber;
-      }
+   /**
+    * getPhoneNumber method
+    *
+    * @return The person's phone number.
+    */
+   public String getPhoneNumber() {
+      return phoneNumber;
+   }
 
-      /**
-       *  getAge method
-       *  @return The person's  age.
-       */
-      public int getAge ()
-      {
-         return age;
-      }
+   /**
+    * getAge method
+    *
+    * @return The person's  age.
+    */
+   public int getAge() {
+      return age;
+   }
 
-      /* 4.
-       * this method displays a formatted text string with the values the
-       * instance variables hold. See example of output for formatting
-       */
-      @Override
-      public String toString ()
-      {
-         return String.format("-------------------------------------\nName: %s\nPhone #: %s\nAge: %d", name, phoneNumber, age); // written for syntax only, an error otherwise
-      }
-
+   /* 4.
+    * this method displays a formatted text string with the values the
+    * instance variables hold. See example of output for formatting
+    */
+   @Override
+   public String toString() {
+      return "";
    }
 }
+
+
+
