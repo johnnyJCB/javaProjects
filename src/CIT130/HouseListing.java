@@ -1,5 +1,5 @@
 package CIT130;
-//Name: Johnny J. Cheng
+// Name: Johnny J. Cheng
 // Regarding above error - Either leave package blank OR ensure BOTH files belong to the same package
 
 

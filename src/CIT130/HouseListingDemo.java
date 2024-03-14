@@ -1,5 +1,5 @@
 package CIT130;
-
+// Name: Johnny Cheng
 // Regarding above error - Either leave package blank OR ensure BOTH files belong to the same package
 
 import java.util.Scanner;
@@ -77,13 +77,12 @@ public class HouseListingDemo {
            Please write a comment explaining how / why.***
          */
 
-        mostExpensive = HlObjects[0].getListPrice();
-        for(int i = 1; i < HlObjects.length; i++){
-            if(HlObjects[i].getListPrice() > mostExpensive){
-                mostExpensive = HlObjects[i].getListPrice();
+        mostExpensive = HlObjects[0].getListPrice();            //"mostexpensive" variable was set to the price of the first object in the array
+        for(int i = 1; i < HlObjects.length; i++){              // iterate over "HlObjects" array
+            if(HlObjects[i].getListPrice() > mostExpensive){    // if it finds that the price of an object is higher than the current "mostexpensive"
+                mostExpensive = HlObjects[i].getListPrice();    // then the price attribute of that object is assigned to "mostexpensive"
             }
         }
-
 
         output = "Listings:\n";
         /*
